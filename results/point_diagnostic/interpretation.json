@@ -1,0 +1,5 @@
+{
+  "status": "post-primary exploratory implementation sensitivity; not preregistered or validation-selected",
+  "purpose": "Check whether continuously updated point deadlines create avoidable deferral.",
+  "settings": "gamma40, no history, freeze arrival median; once overdue, assume only current slot remains"
+}

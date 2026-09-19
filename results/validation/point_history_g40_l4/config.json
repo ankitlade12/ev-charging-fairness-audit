@@ -1,0 +1,8 @@
+{
+  "name": "point_history",
+  "capacity": 76.22999999999999,
+  "gamma": 40,
+  "lam": 4,
+  "rho": 0.2,
+  "horizon": 96
+}

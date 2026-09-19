@@ -1,0 +1,20 @@
+{
+  "sessions": 744,
+  "users": 60,
+  "repeated_users": 60,
+  "tail_users": 6,
+  "tail": 0.19967817155827083,
+  "mean_shortfall": 0.05998717758969579,
+  "delivered": 13779.195474792996,
+  "cost": 2100.280435828562,
+  "cost_per_kwh": 0.15242402502168687,
+  "repeat_failure": 0.05,
+  "new_shortfall": 0.0450197482096247,
+  "new_sessions": 70,
+  "excess_kwh": 0.0,
+  "fallbacks": 3,
+  "decisions": 1200,
+  "max_violation": 2.345390726077312e-08,
+  "latency_p50": 0.010137229503015988,
+  "latency_p95": 0.01859857885283418
+}

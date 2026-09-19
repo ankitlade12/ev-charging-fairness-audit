@@ -1,0 +1,29 @@
+{
+  "status": "post-primary data adapter sensitivity; original 12-session audit retained",
+  "preprocessing": {
+    "raw_sessions": 26,
+    "superseded_same_bin_updates": 12
+  },
+  "normalization": {
+    "raw_sessions": 26,
+    "excluded_cross_local_day": 3,
+    "excluded_missing_identity": 6,
+    "eligible_before_overlap": 14,
+    "late_first_request": 0,
+    "energy_revision_sessions": 1,
+    "rounding_lost_hours": 4.438055555555555,
+    "excluded_no_full_service_slot": 3,
+    "excluded_station_overlap": 0,
+    "eligible_sessions": 14,
+    "eligible_users": 10
+  },
+  "eligible_sessions": 14,
+  "eligible_users": 10,
+  "users_with_at_least_five_sessions": 0,
+  "repeat_count_histogram": {
+    "1": 7,
+    "3": 1,
+    "2": 2
+  },
+  "scope": "No request values, identities or raw records exported; not an empirical fairness evaluation."
+}

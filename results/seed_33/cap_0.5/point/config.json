@@ -1,0 +1,8 @@
+{
+  "name": "point",
+  "capacity": 102.3,
+  "gamma": 40.0,
+  "lam": 0.0,
+  "rho": 0.2,
+  "horizon": 96
+}

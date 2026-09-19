@@ -1,0 +1,8 @@
+{
+  "name": "history",
+  "capacity": 76.22999999999999,
+  "gamma": 10,
+  "lam": 4,
+  "rho": 0.2,
+  "horizon": 96
+}

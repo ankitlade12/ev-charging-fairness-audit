@@ -1,0 +1,5 @@
+{
+  "policy": "equal",
+  "claim": "equal controller never accesses forecast; forecast-only perturbations cannot alter its actions",
+  "verified_in_tests": true
+}

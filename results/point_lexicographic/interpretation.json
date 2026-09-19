@@ -1,0 +1,6 @@
+{
+  "status": "post-primary exploratory diagnostic; not validation-selected",
+  "primary_objective_tolerance_dollars": 1e-07,
+  "secondary": "minimize sum(slot index * planned battery kWh)",
+  "settings": "rolling conditional median, gamma40, no history"
+}

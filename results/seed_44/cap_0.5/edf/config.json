@@ -1,0 +1,8 @@
+{
+  "name": "edf",
+  "capacity": 105.6,
+  "gamma": 20.0,
+  "lam": 0.0,
+  "rho": 0.2,
+  "horizon": 96
+}

@@ -1,0 +1,35 @@
+{
+  "status": "post-primary exploratory; locked before these new runs, after primary and earlier point diagnostic observed",
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "policies": [
+    "point",
+    "point_history",
+    "stochastic",
+    "history",
+    "pf_mpc"
+  ],
+  "capacity_fraction": 0.35,
+  "landmarks_slots": [
+    4,
+    12,
+    20,
+    28,
+    36
+  ],
+  "leads_slots": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "forecast_weighting": "equal within-session landmark mean, then equal sessions within seed; paired five-seed t intervals",
+  "solver": "economic objective including original tiny time preference; secondary earliest planned energy; objective allowance 1e-7 dollars, acceptance 2e-7; existing feasibility fallback retained",
+  "selection": "unchanged original validation-selected settings; no retuning; not a fresh confirmatory test",
+  "script_sha256": "d26bd4e0fdbfdc399d0418ab9d1c7a04a8e6d669bd0d8437a663d381b4474572"
+}

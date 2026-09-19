@@ -1,0 +1,94 @@
+{
+  "pages": 6,
+  "letter_page_size": true,
+  "all_fonts_embedded": true,
+  "no_type3_fonts": true,
+  "pdf_author_empty": true,
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "within_regular_base_limit": true,
+  "within_wip_base_limit": true,
+  "category_selected_by_author": false,
+  "fonts": [
+    {
+      "name": "IRKIFE+NimbusRomNo9L-Regu",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "LREKMX+NimbusRomNo9L-MediItal",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "CHQZYF+NimbusRomNo9L-Medi",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "QQIWRH+NimbusRomNo9L-ReguItal",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "JODRLV+CMMI10",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "IOOKUE+CMMI7",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "NPIHCY+CMR7",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "LZJNXD+CMR10",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "SXSCKE+CMSY10",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "XAJAAY+CMEX10",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "RAZVEJ+MSBM10",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "PXBGHL+CMSY7",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "BMQQDV+DejaVuSans",
+      "type": "Type0",
+      "embedded": true
+    },
+    {
+      "name": "BMQQDV+DejaVuSans",
+      "type": "Type0",
+      "embedded": true
+    },
+    {
+      "name": "NFHPWC+CMMI8",
+      "type": "Type1",
+      "embedded": true
+    },
+    {
+      "name": "BMQQDV+DejaVuSans",
+      "type": "Type0",
+      "embedded": true
+    }
+  ]
+}

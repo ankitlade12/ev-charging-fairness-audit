@@ -1,0 +1,28 @@
+test_boundary_spanning_session_excluded (test_core.AdditionalChecks.test_boundary_spanning_session_excluded) ... ok
+test_conditional_survival_distribution (test_core.AdditionalChecks.test_conditional_survival_distribution) ... ok
+test_forecast_free_policy_never_reads_model (test_core.AdditionalChecks.test_forecast_free_policy_never_reads_model) ... ok
+test_lexicographic_point_solver_preserves_economic_optimum (test_core.AdditionalChecks.test_lexicographic_point_solver_preserves_economic_optimum) ... ok
+test_synthetic_split_is_temporal_and_newcomers_held_out (test_core.AdditionalChecks.test_synthetic_split_is_temporal_and_newcomers_held_out) ... ok
+test_energy_conservation_and_departure (test_core.CoreTests.test_energy_conservation_and_departure) ... ok
+test_expectation_equals_enumeration (test_core.CoreTests.test_expectation_equals_enumeration) ... ok
+test_future_events_do_not_change_earlier_actions (test_core.CoreTests.test_future_events_do_not_change_earlier_actions) ... ok
+test_history_update_once_after_departure (test_core.CoreTests.test_history_update_once_after_departure) ... ok
+test_late_request_no_backfill (test_core.CoreTests.test_late_request_no_backfill) ... ok
+test_malformed_and_empty_data_fail_closed (test_core.CoreTests.test_malformed_and_empty_data_fail_closed) ... ok
+test_nonfinite_action_rejected (test_core.CoreTests.test_nonfinite_action_rejected) ... ok
+test_oracle_bound_and_analytic_single_car (test_core.CoreTests.test_oracle_bound_and_analytic_single_car) ... ok
+test_power_caps (test_core.CoreTests.test_power_caps) ... ok
+test_request_decrease_preserves_energy (test_core.CoreTests.test_request_decrease_preserves_energy) ... ok
+test_revision_boundary (test_core.CoreTests.test_revision_boundary) ... ok
+test_solver_failure_fallback (test_core.CoreTests.test_solver_failure_fallback) ... ok
+test_both_duplicate_ids_quarantined (test_second_pass.RevisionOrderTests.test_both_duplicate_ids_quarantined) ... ok
+test_exact_timestamp_conflict_quarantines_record (test_second_pass.RevisionOrderTests.test_exact_timestamp_conflict_quarantines_record) ... ok
+test_invalid_revision_does_not_revert_to_old_request (test_second_pass.RevisionOrderTests.test_invalid_revision_does_not_revert_to_old_request) ... ok
+test_later_bins_retained (test_second_pass.RevisionOrderTests.test_later_bins_retained) ... ok
+test_latest_exact_update_wins_independent_of_input_order (test_second_pass.RevisionOrderTests.test_latest_exact_update_wins_independent_of_input_order) ... ok
+test_lexicographic_pf_auxiliary_variable_not_treated_as_energy (test_second_pass.RevisionOrderTests.test_lexicographic_pf_auxiliary_variable_not_treated_as_energy) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 1.859s
+
+OK

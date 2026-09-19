@@ -1,0 +1,20 @@
+{
+  "raw_sessions": 26,
+  "excluded_cross_local_day": 3,
+  "excluded_missing_identity": 6,
+  "eligible_before_overlap": 12,
+  "late_first_request": 0,
+  "energy_revision_sessions": 0,
+  "rounding_lost_hours": 3.7680555555555557,
+  "excluded_no_full_service_slot": 3,
+  "excluded_ambiguous_revision_bin": 2,
+  "excluded_station_overlap": 0,
+  "eligible_sessions": 12,
+  "eligible_users": 8,
+  "repeat_count_distribution": {
+    "1": 5,
+    "3": 1,
+    "2": 2
+  },
+  "source_sha256": "e125e277f968ed525e65bd569f8d336c5eb3be57a972a3b3a99eb2035ccdad5d"
+}

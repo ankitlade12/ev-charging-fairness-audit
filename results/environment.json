@@ -1,0 +1,21 @@
+{
+  "primary_python": "3.14 (see original run context)",
+  "reproduction_python": "3.13.9",
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "logical_cpu_count": 10,
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8"
+  },
+  "threads_env": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "primary_workers": 3,
+  "supplement_workers": 2,
+  "timing_limit": "Runs used concurrency and shared per-model forecast caches; per-run latency is not a controlled head-to-head hardware benchmark."
+}

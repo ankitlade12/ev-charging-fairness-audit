@@ -1,0 +1,36 @@
+{
+  "tail": {
+    "policy": "history",
+    "metric": "tail",
+    "mean": -0.02557345922454054,
+    "low": -0.03729713395057722,
+    "high": -0.013849784498503858,
+    "n": 5
+  },
+  "delivered": {
+    "policy": "history",
+    "metric": "delivered",
+    "mean": 1.0020451381303732,
+    "low": 1.0005571548983572,
+    "high": 1.0035331213623893,
+    "n": 5
+  },
+  "cost_per_kwh": {
+    "policy": "history",
+    "metric": "cost_per_kwh",
+    "mean": 1.0016782380706706,
+    "low": 1.0007402115734643,
+    "high": 1.002616264567877,
+    "n": 5
+  },
+  "new_shortfall": {
+    "policy": "history",
+    "metric": "new_shortfall",
+    "mean": 0.0006010048203452325,
+    "low": -0.005786527572935434,
+    "high": 0.006988537213625899,
+    "n": 5
+  },
+  "mean_target_pass": false,
+  "interval_target_pass": false
+}

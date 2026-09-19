@@ -1,0 +1,26 @@
+{
+  "train": {
+    "sessions": 1724,
+    "users": 54,
+    "start": "2025-01-06",
+    "end": "2025-04-18"
+  },
+  "calibration": {
+    "sessions": 470,
+    "users": 54,
+    "start": "2025-04-21",
+    "end": "2025-05-16"
+  },
+  "validation": {
+    "sessions": 341,
+    "users": 54,
+    "start": "2025-05-19",
+    "end": "2025-06-06"
+  },
+  "test": {
+    "sessions": 744,
+    "users": 60,
+    "start": "2025-06-09",
+    "end": "2025-07-18"
+  }
+}

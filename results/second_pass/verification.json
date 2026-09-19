@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "runs": 25,
+  "script_lock_verified": true,
+  "primary_source_and_protocol_unchanged": true,
+  "all_session_metrics_recomputed": true,
+  "early_forecasts_match_original": true,
+  "applied_power_tolerance": 1e-07,
+  "max_applied_violation": 8.480432711621688e-08,
+  "total_fallbacks": 48,
+  "all_deliveries_below_offline_bounds": true,
+  "interpretation": "Exploratory reused-population checks; not external replication or official IEEE validation."
+}

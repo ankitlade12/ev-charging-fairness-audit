@@ -1,0 +1,8 @@
+{
+  "name": "fcfs",
+  "capacity": 38.279999999999994,
+  "gamma": 20.0,
+  "lam": 0.0,
+  "rho": 0.2,
+  "horizon": 96
+}

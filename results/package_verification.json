@@ -1,0 +1,14 @@
+{
+  "locked_core_code_unchanged": true,
+  "primary_runs": 220,
+  "primary_constraints_pass": true,
+  "trace_ledger_checks": [
+    "history",
+    "pf_mpc"
+  ],
+  "clean_environment_reproduction": true,
+  "manuscript_pdf_exists": true,
+  "independent_human_review": false,
+  "external_submission": false,
+  "real_data_fairness_gate_pass": false
+}

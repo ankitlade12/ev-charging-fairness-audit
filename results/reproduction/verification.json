@@ -1,0 +1,21 @@
+{
+  "python": "3.13.9",
+  "tolerance": 1e-07,
+  "passed": true,
+  "checks": {
+    "history": {
+      "requested": 0.0,
+      "delivered": 0.0,
+      "shortfall": 0.0,
+      "cost": 0.0
+    },
+    "pf_mpc": {
+      "requested": 0.0,
+      "delivered": 0.0,
+      "shortfall": 0.0,
+      "cost": 0.0
+    }
+  },
+  "elapsed_seconds": 68.68749166699126,
+  "limitation": "Separate clean Python environment, same machine and agent; not independent human reproduction."
+}

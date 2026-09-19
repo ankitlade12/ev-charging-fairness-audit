@@ -1,0 +1,33 @@
+{
+  "locked_at": "2026-09-13T22:42:38.665403+00:00",
+  "status": "secondary analyses specified before inspecting primary held-out scores; not primary hypothesis tests",
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "capacity_fraction": 0.35,
+  "ablations": [
+    "uncalibrated hazard",
+    "empirical duration",
+    "12-hour horizon",
+    "point_history and stochastic use matched gamma40 from primary runs"
+  ],
+  "forecast_interventions": [
+    "early 2h",
+    "late 2h",
+    "wide factor1.6",
+    "narrow factor0.6"
+  ],
+  "assignment": "sha256(user+workload_seed) parity; independent of outcomes",
+  "stress": [
+    "subtract1.5h from actual dwell, minimum45min",
+    "multiply requests by1.25"
+  ],
+  "comparator": "locked proportional-fair MPC",
+  "negative_control": "equal sharing does not inspect forecasts",
+  "block_bootstrap": "1000 repetitions of paired 5-day blocks within seed11, fixed realized histories",
+  "no_retuning": true
+}

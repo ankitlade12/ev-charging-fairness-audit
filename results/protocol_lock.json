@@ -1,0 +1,85 @@
+{
+  "protocol_sha256": "4683484c99734946145c1eef853ecc89fb8611ff80494994209626c7d5829cbe",
+  "selected": {
+    "debt_share": {
+      "gamma": 20.0,
+      "lam": 4.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "edf": {
+      "gamma": 20.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "equal": {
+      "gamma": 20.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "fcfs": {
+      "gamma": 20.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "history": {
+      "gamma": 40.0,
+      "lam": 4.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "laxity": {
+      "gamma": 20.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "maxmin": {
+      "gamma": 20.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "pf_mpc": {
+      "gamma": 40.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "point": {
+      "gamma": 40.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "point_history": {
+      "gamma": 40.0,
+      "lam": 4.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "stochastic": {
+      "gamma": 40.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    }
+  },
+  "comparator": "pf_mpc",
+  "training_peak_kw": 217.79999999999998,
+  "code_hashes": {
+    "src/evfair/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "src/evfair/control.py": "e7edc8c1c488f7dae9bd0b1c99adff38ca6d9fb41d85c1365ee8988a442936e4",
+    "src/evfair/data.py": "ed01380e4f5bd2c17fff058c416da425d65da614d7a13ec1e86febf0c5ceffa6",
+    "src/evfair/experiment.py": "34a8211f6d3a12af69b1d0401372e0932fba919e4620545de76ca71fa1c82ab1",
+    "src/evfair/forecast.py": "8eb9da4904368d3dd5181e44206e956d55e0f9a5a266c536368fa8e77189bee9",
+    "src/evfair/metrics.py": "9ec106bf1c00064c3685adcccbd0eda4d2f2a78e936a5d448475574bcc8924a9",
+    "src/evfair/simulate.py": "6ca8269ee9c2be346edfe169ec6ebdd05d0099f1963a17db0cda96176d075ef5",
+    "src/evfair/synthetic.py": "5184098c526e028a5867cd329dd6a85ac1befccb791a7d07b3b068d054214ad6"
+  },
+  "locked_at": "2026-09-13T22:41:39.239208+00:00",
+  "note": "Locked after validation, before final test; not external preregistration."
+}
