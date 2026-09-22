@@ -2,7 +2,9 @@
 
 Research code and supplementary material for **Service History and Forecast Value in Fair EV Charging: A Reproducible Audit**.
 
-[Paper (PDF)](manuscript/main.pdf) · [LaTeX source](manuscript/main.tex) · [Methods](docs/method_and_protocol.md) · [Results](docs/results_report.md) · [Diagnostic analyses](docs/diagnostics.md)
+[Methods](docs/method_and_protocol.md) · [Results](docs/results_report.md) · [Diagnostic analyses](docs/diagnostics.md)
+
+The manuscript PDF and LaTeX files are maintained locally and are excluded from the current GitHub tree at the authors' request. Earlier Git history may still contain the previous draft.
 
 ## Overview
 
@@ -31,7 +33,7 @@ In 25 exploratory runs with consistent numerical tie-breaking, point MPC's mean 
 
 | Path | Contents |
 |---|---|
-| `manuscript/` | Current paper, LaTeX source, generated tables, and IEEEtran class |
+| `manuscript/` (local only) | Author paper, LaTeX source, generated tables, and IEEEtran class; not included in GitHub checkouts |
 | `src/evfair/` | Session processing, forecasts, controllers, simulation, and metrics |
 | `config/` | Primary protocol and secondary-analysis specification |
 | `results/` | Saved trajectories, summary tables, protocol locks, and verification records |
@@ -71,17 +73,18 @@ python scripts/verify_artifact.py
 
 These checks verify the locked source and protocol, saved outcomes, energy accounting, numerical feasibility, and exploratory diagnostics. They do not rerun the full experiment or establish external validity.
 
-To rebuild and check the current paper:
+To rebuild and check the paper in an author working copy that contains the local `manuscript/` directory:
 
 ```sh
 python scripts/build_manuscript.py
 python scripts/verify_pdf.py
+python scripts/verify_pdf.py --review
 python scripts/verify_artifact.py
 ```
 
 ## Reproduce the experiments
 
-The commands below overwrite derived results. Use a separate working copy to retain the supplied reference outputs. Controller selection uses validation data; the later diagnostics reuse the inspected test populations and remain exploratory.
+The commands below overwrite derived results. Use a separate working copy to retain the supplied reference outputs. Controller selection uses validation data; the later diagnostics reuse the inspected test populations and remain exploratory. The final manuscript build and PDF check require the separately held author manuscript; skip those two commands in a GitHub-only checkout. Reporting commands may regenerate ignored table files under `manuscript/`, but do not reconstruct the manuscript text.
 
 ```sh
 python -m evfair.cli validate
@@ -109,4 +112,4 @@ The ACN discovery sample contains 26 records. The original adapter retained 12 s
 
 Acquisition sources, exclusions, and commands are documented in [data acquisition](docs/data_acquisition.md). Real-session working files are excluded from review archives. The [related-work notes](docs/recent_literature_review.md) record the sources and access depth used in preparing the paper.
 
-The manuscript is an unpublished research draft. Author information and submission decisions remain in the [submission checklist](docs/submission_checklist.md). No public license has been selected for the research code; the included IEEEtran class retains its own license notices.
+The manuscript is an unpublished research draft maintained separately from this repository. Submission decisions remain in the [submission checklist](docs/submission_checklist.md). No public license has been selected for the research code; the IEEEtran class in the local author package retains its own license notices.

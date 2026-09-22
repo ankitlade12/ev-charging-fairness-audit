@@ -22,4 +22,4 @@
 | Primary source/protocol and outcomes preserved | results/second_pass/primary_preservation.json; results/second_pass/verification.json |
 | New implementation checks | tests/test_second_pass.py; results/second_pass/tests.txt |
 | Literature overlap and current version checks | docs/recent_literature_review.md |
-| Six-page current manuscript; local format checks only | results/pdf_verification.json; results/pdf_review/review.json |
+| Seven-page author and anonymous review manuscripts; local format checks only | results/pdf_verification.json; results/pdf_review_verification.json; results/pdf_review/review.json |

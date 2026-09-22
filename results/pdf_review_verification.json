@@ -3,7 +3,7 @@
   "letter_page_size": true,
   "all_fonts_embedded": true,
   "no_type3_fonts": true,
-  "pdf_author_empty": false,
+  "pdf_author_empty": true,
   "pdf_author_matches_source": true,
   "author_names_present": true,
   "undefined_references": false,
@@ -11,9 +11,10 @@
   "within_regular_base_limit": true,
   "within_wip_base_limit": false,
   "category_selected_by_author": false,
+  "anonymous_review": true,
   "fonts": [
     {
-      "name": "CHYPHM+NimbusRomNo9L-Regu",
+      "name": "IRKIFE+NimbusRomNo9L-Regu",
       "type": "Type1",
       "embedded": true
     },
@@ -68,13 +69,13 @@
       "embedded": true
     },
     {
-      "name": "BMQQDV+DejaVuSans",
-      "type": "Type0",
+      "name": "PXBGHL+CMSY7",
+      "type": "Type1",
       "embedded": true
     },
     {
-      "name": "PXBGHL+CMSY7",
-      "type": "Type1",
+      "name": "BMQQDV+DejaVuSans",
+      "type": "Type0",
       "embedded": true
     },
     {

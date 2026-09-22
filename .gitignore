@@ -25,3 +25,7 @@ dist/
 /results/data_exclusions.json
 /results/pdf_review/page_*.png
 /evfair_ccwc_review.zip
+
+# Author manuscript and final delivery stay local; do not publish to GitHub.
+/manuscript/
+/final/

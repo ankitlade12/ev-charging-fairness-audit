@@ -26,6 +26,10 @@ Reviewed 13 September 2026. This is a targeted primary-source review, not a syst
 
 ## Novelty decision
 
+### 21 September 2026 recheck
+
+Rechecked the primary records for Limmer et al., Huang and Wang, Hall et al. and Reddy, and inspected Puech et al.'s [current v4 manuscript](https://arxiv.org/html/2402.13224v4), including Section IV's scenario-dependent two-stage decisions. The paper now cites v4 (13 November 2024) rather than v1. This is a version correction, not a new publication or a reproduced comparator. The broader search also located [Hossen et al.'s OCPP integration study](https://www.nature.com/articles/s41598-026-49535-7) and [Lee et al.'s bidirectional scheduling study](https://www.sciencedirect.com/science/article/pii/S2949821X26000608); only their publisher abstracts were screened. They concern deployment integration and bidirectional scheduling, respectively, and do not supply the missing empirical validation for this study. The November-dated heterogeneous-charger paper remains a lead with unresolved publication timing. This targeted update is not an exhaustive literature search.
+
 The current defensible contribution is **a reproducible, information-timed comparison showing when bounded service history helps a specified comparator and when simpler sharing or solver behavior undermines a complexity claim**. It is not the invention of fairness-aware charging, historical priorities, repeated-user metrics, stochastic MPC, or exact integration of a linear expectation. New papers make a broad algorithmic-novelty pitch less defensible, not more.
 
 For a stronger subsequent study, compare matched numerical implementations, simple history-sharing and a credible learned/risk-aware simple policy before adding a larger model. Use a fresh protocol and untouched populations or eligible field data. The question should be whether history provides incremental value after forecast quality, unavoidable demand shortfall, numerical scheduling behavior and deployment complexity are controlled.

@@ -1,8 +1,10 @@
 {
-  "reviewed_by": "Codex visual inspection; rendered pages unchanged after repository cleanup",
-  "review_date": "2026-09-19",
-  "page_count": 6,
-  "status": "Pass: all six pages match the previously inspected editorial revision; no observed clipping or overlapping content.",
+  "reviewed_by": "Codex visual inspection of rendered author and anonymous review pages",
+  "review_date": "2026-09-21",
+  "page_count": 7,
+  "status": "Pass: equations, author blocks, figures, tables and references inspected; no observed clipping or overlapping content. Final reference page is partially filled.",
   "not_independent_human_review": true,
-  "pdf_sha256": "5438255e14c4636725760b9ed2b594301deb13d021b0e3eb108611c3a10e5c91"
+  "pdf_sha256": "a2ddefa396ae475456d5591ec81ba40de4bc4b514172e2019dfa5f0b87023e01",
+  "anonymous_pdf_sha256": "c8c3a641ba223e3a0b11d8af7b2652366430903f06e4eeae615871414dbc0906",
+  "anonymous_page_count": 7
 }
