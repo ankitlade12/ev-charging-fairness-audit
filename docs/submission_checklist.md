@@ -7,7 +7,7 @@ Updated 21 September 2026 against the [submission instructions](https://ieee-ccw
 - The local `manuscript/main.pdf` is the named author copy. Author order, names, emails and the shared Independent Researcher, Dallas, USA affiliation were provided by the user.
 - The local `manuscript/review.pdf` is the anonymous review copy with Author 1 and Author 2, no affiliations or email links, and empty author metadata. Use this version for review after resolving the disclosure-placement question below.
 - Both copies have seven US-letter pages, embedded non-Type-3 fonts and no undefined references or overfull boxes. They fit the regular-paper base limit, but exceed the six-page WIP base limit. Regular papers permit up to three paid extra pages; WIP permits up to two. Category selection remains the authors' decision.
-- PDFs, manuscript sources and final delivery files stay local and are ignored by Git. Removing them from the current GitHub tree does not erase earlier commits, clones or downloaded copies. The repository was private, with one branch, no releases and no Pages site when checked.
+- PDFs, manuscript sources and final delivery files stay local and are ignored by Git. The publication history was subsequently rewritten to exclude the manuscript. Because GitHub still served cached old commits, the original repository was retained as a private backup and a fresh repository received only the cleaned history. The old manuscript commit returns HTTP 404 in the replacement repository. Existing private backups and downloaded copies are not erased.
 
 ## Dates and format
 

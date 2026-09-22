@@ -4,7 +4,7 @@ Research code and supplementary material for **Service History and Forecast Valu
 
 [Methods](docs/method_and_protocol.md) · [Results](docs/results_report.md) · [Diagnostic analyses](docs/diagnostics.md)
 
-The manuscript PDF and LaTeX files are maintained locally and are excluded from the current GitHub tree at the authors' request. Earlier Git history may still contain the previous draft.
+The manuscript PDF and LaTeX files are maintained locally and are excluded from this repository and its published Git history at the authors' request.
 
 ## Overview
 

@@ -36,7 +36,7 @@
     "docs/method_and_protocol.md": "4bcc6d16a456c514bf4d45e6173c603cb0281b6fa5c7dfb9ebf39e8ab0a8ef02",
     "docs/recent_literature_review.md": "c3698b84c9322b0427cbf960a6f285d9e325345c995cf126b5f0cfe824fcc5d1",
     "docs/results_report.md": "ae712e5786e13f864d55f9551d14391addf5eabf8b94654dd28d0c922ee299a1",
-    "docs/submission_checklist.md": "694100b648f7b54ac6fb15a4dacd3010f9ef621bec781ee8c2ec04cebddbeaa6",
+    "docs/submission_checklist.md": "8f0cc69072bc015520c74ec86f76567eeaefe5503bf41750cfdfe41149a865c4",
     "figures/calibration.pdf": "a85a71958922d41c29647bedefe81a451b52f189e42827a64767b16e2d0ed74c",
     "figures/capacity_audit.pdf": "a2f764926f37686c1580be6135f83ce73138031860790ebfd2ba8df6a01d090c",
     "figures/capacity_audit.png": "dd38f3c609595d302dd1bb6f569fb19537684040ce84e720a9640d4d02454277",
@@ -1235,7 +1235,7 @@
     "pyproject.toml": "03ac275a1c6c012534fb8759ceab3a21853a7dad4c6589d6e01ad45ac2e495bf",
     "requirements.lock": "1874152e5a38e1a256bad664d1976cfec1a8815ab4b6d69551f475e01702d024",
     "requirements-review.lock": "dfb31053b0e77397ce40d23cfd001682b5ce30700dcaf772acc7141a4f4214f3",
-    "README.md": "eaa017035d273bc6fddc02f016416b9cd95a10bb6f20b6eb000ff640201ecb69",
+    "README.md": "ca5f0ca134e9f4869eae09999cb30f9f2096083156dce67e354e557802a7f2bf",
     ".gitignore": "de2ab234d122a1799a3c6661b70643e6b173d99175af9b784d1f369f6328466e"
   },
   "python": "3.13.9",
