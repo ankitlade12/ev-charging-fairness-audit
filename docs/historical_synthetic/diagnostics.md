@@ -1,11 +1,3 @@
-# Active real-session diagnostics
-
-The current study uses consistent two-stage tie-breaking with fresh June validation selection. It has 52 fully traced validation/evaluation runs, independently verified current requests, policy histories and costs, conditional block intervals, capacity sensitivity, and landmark forecast scores. See [current results](results_report.md), [protocol](method_and_protocol.md), and `results/real_data/`.
-
-The text below documents the **earlier synthetic study only**. Its diagnostic runs reused inspected synthetic tests and are not the current real-session results.
-
----
-
 # Numerical and forecast diagnostics
 
 These analyses were added after inspection of the primary results. They reuse the original five synthetic populations, retain the validation-selected settings, and do not replace the locked primary comparison. All intervals below are exploratory and conditional on the workload generator.

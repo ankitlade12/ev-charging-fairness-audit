@@ -1,0 +1,9 @@
+{
+  "train_sessions": 5324,
+  "calibration_sessions": 1530,
+  "scale": 1.0035575387570825,
+  "intercept": 0.033127786557097146,
+  "elapsed_seconds": 1.1938534590299241,
+  "model_sha256": "3d904128bdcad2b2aa6cb3a00299678221e58cbd969b9b2b7123938cd10f96b1",
+  "training_cutoff_slot": 1729655
+}

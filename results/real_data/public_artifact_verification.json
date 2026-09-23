@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "source_files_checked": 16,
+  "controller_runs": 31,
+  "paired_estimates_recomputed": 30,
+  "scope": "Portable reference code/protocol hashes, aggregate counts, locked configurations and pair arithmetic. Does not recheck raw data, private action logs or bootstrap samples."
+}

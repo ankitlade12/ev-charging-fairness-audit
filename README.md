@@ -1,115 +1,81 @@
-# Service History and Forecast Value in Fair EV Charging
+# Service History and Forecast Value in EV Charging
 
-Research code and supplementary material for **Service History and Forecast Value in Fair EV Charging: A Reproducible Audit**.
+Research artifact for **Service History and Forecast Value in EV Charging: A Real-Session Replay Audit**.
 
-[Methods](docs/method_and_protocol.md) · [Results](docs/results_report.md) · [Diagnostic analyses](docs/diagnostics.md)
+[Results](docs/results_report.md) · [Protocol](docs/method_and_protocol.md) · [Data provenance](docs/data_acquisition.md) · [ICCA checklist](docs/submission_checklist.md)
 
-The manuscript PDF and LaTeX files are maintained locally and are excluded from this repository and its published Git history at the authors' request.
+The current study replays **recorded JPL ACN-Data sessions**, with chronological fitting, calibration, validation and two later test periods. It uses **16,529 assigned sessions**, including **4,206 Q3 and 4,146 Q4 test sessions**. Arrivals, departures, identities and requests are recorded; alternative-controller energy delivery, shortfalls and costs are simulated under common assumptions. This is not a live charging intervention.
 
-## Overview
+## Main finding
 
-When electric vehicles share limited charging capacity, some users may leave repeatedly undercharged. This study asks whether prioritizing past service shortfalls improves repeated-user outcomes, and whether departure distributions provide a scheduling advantage over point forecasts.
+The candidate does **not** beat validation-selected max–min sharing. Q3 worst-decile user shortfall is **58.30% versus 52.35%**, a difference of **+5.95 percentage points [2.69,10.85]**. Positive differences mean worse service. Its energy and unit-cost ratios are **98.83%** and **98.95%**, meeting those point-estimate guardrails but failing the five-point fairness target. The later period supports the same direction; complete results and ablations are in the linked report.
 
-We evaluate eleven charging policies across five synthetic populations and four capacity levels. Forecast fitting, calibration, controller selection, and evaluation use chronological splits. The primary comparator and controller settings were fixed before test evaluation. Separate numerical and forecasting diagnostics examine the sensitivity of the findings.
+Intervals are conditional paired five-observed-day outcome-block resampling intervals. They hold fitted settings and realized histories fixed and do not represent independent-site or dynamic-replay uncertainty. Two test periods at one site are not independent replications.
 
-All controller results are **synthetic**. The accessible ACN discovery sample does not contain enough repeated sessions per user for an empirical fairness evaluation.
+All eleven policies use the same eligible data. Every MPC method uses consistent two-stage tie-breaking, with June-only tuning locked before testing. There are **21 validation and 31 test/sensitivity runs**, **27 passing automated tests**, and **3,292,992 independently audited applied-action rows**. A fresh primary-pair replay matches saved session results to numerical precision on the same machine/environment. No independent human replication is claimed.
 
-## Main findings
-
-At the primary capacity setting, the history-plus-uncertainty controller has a mean worst-decile user shortfall of **16.27%**, compared with **18.83%** for the validation-selected proportional-fair controller.
-
-| Comparison | Estimate | 95% interval |
-|---|---:|---:|
-| Tail shortfall: history controller minus proportional-fair MPC | −2.56 percentage points | [−3.73, −1.38] |
-| Delivered energy relative to proportional-fair MPC | 100.20% | [100.06%, 100.35%] |
-| Unit cost relative to proportional-fair MPC | 100.17% | [100.07%, 100.26%] |
-| Tail shortfall: history controller minus simple history-weighted sharing | +0.54 percentage points | [−1.81, 2.88] |
-
-Intervals use paired results across five generated populations. The prespecified five-percentage-point improvement target is not met, and the results do not establish an advantage over simple history-weighted sharing.
-
-In 25 exploratory runs with consistent numerical tie-breaking, point MPC's mean tail shortfall falls from 29.75% to 19.09%. Its comparison with uncertainty-only MPC becomes inconclusive. Better departure forecast scores therefore do not establish better service allocation. See the [diagnostic analyses](docs/diagnostics.md) and [claim-to-evidence map](docs/claim_evidence_map.md) for the supporting records.
-
-## Repository structure
+## Files and privacy
 
 | Path | Contents |
 |---|---|
-| `manuscript/` (local only) | Author paper, LaTeX source, generated tables, and IEEEtran class; not included in GitHub checkouts |
-| `src/evfair/` | Session processing, forecasts, controllers, simulation, and metrics |
-| `config/` | Primary protocol and secondary-analysis specification |
-| `results/` | Saved trajectories, summary tables, protocol locks, and verification records |
-| `figures/` | Paper figures and supplementary plots |
-| `scripts/` | Data acquisition, diagnostics, reporting, and verification |
-| `tests/` | Information-timing, numerical, and physical-consistency checks |
-| `docs/` | Methods, results, data provenance, related work, and author submission notes |
-| `notebooks/audit.ipynb` | Interactive inspection of saved results |
-| `data/` | Local acquisition records and processed discovery sample |
+| `src/evfair/` | Frozen core session processing, forecasting, control and replay |
+| `config/real_data_protocol.json` | Current real-session design, exclusions and comparison rules |
+| `results/real_data/` | Aggregate outcomes, provenance, protocol/selection locks and verification |
+| `scripts/*real*.py` | Acquisition, study runner, independent audit, fresh replay and portable verification |
+| `figures/real_*.pdf` | Current real-session plots |
+| `docs/` | Current methods, findings, claims and research notes |
+| `docs/historical_synthetic/` | Earlier documents preserved as historical evidence |
+| `notebooks/audit.ipynb` | Current aggregate inspection, followed by labeled historical cells |
+| `manuscript/`, `final/` | Local author paper and submission package; excluded from Git publication |
+| `data/` | Private working copies of raw/normalized records, model and individual traces; not packaged |
 
-## Setup
+The earlier synthetic study remains unchanged in its original `results/` and `results/second_pass/` paths. It is separate evidence and is not pooled with the real-session results. Its small discovery sample does not describe the coverage of the successful full JPL acquisition.
 
-The saved experiment was run on macOS with Python 3.14. The primary seed-11 comparison was reproduced in a separate Python 3.13 environment on the same machine. Python 3.13 is a suitable starting point for the pinned environment.
+## Environment
 
-Run commands from the repository root:
+The real-session extension ran in Python 3.13 with the pinned scientific packages. From the project root:
 
 ```sh
 python3.13 -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.lock
-export PYTHONPATH="$PWD/src"
+python -m pip install -r requirements-review.lock
+export PYTHONPATH="$PWD/src:$PWD"
 export PYTHONDONTWRITEBYTECODE=1
 export OPENBLAS_NUM_THREADS=1
 export OMP_NUM_THREADS=1
 export MPLCONFIGDIR="${TMPDIR:-/tmp}/evfair-mpl"
 ```
 
-The synthetic experiments require no network access after dependencies are installed. A LaTeX installation providing `pdflatex` is needed to build the paper. PDF checks additionally require `python -m pip install -r requirements-review.lock`.
+The pinned review environment includes the research dependencies and PyMuPDF used by local author tools. Public research verification does not require LaTeX or manuscript files. No public code license has been selected.
 
-## Verify the saved results
+## Check a public checkout
 
 ```sh
 python -m unittest discover -s tests -v
-python scripts/verify_second_pass.py
-python scripts/verify_artifact.py
+python scripts/verify_public_real_artifact.py
 ```
 
-These checks verify the locked source and protocol, saved outcomes, energy accounting, numerical feasibility, and exploratory diagnostics. They do not rerun the full experiment or establish external validity.
+The portable public-artifact check verifies source locks and aggregate arithmetic without private records. The full action audit and fresh replay require the privately held raw data, normalized splits and traces. They cannot run against an aggregates-only package until data are acquired and the experiment is reproduced. The replay check runs the primary pair again in the same environment; it does not refit or create independent evidence. Manuscript prose, its reporting template, private editorial reports and submission archives stay local. The public checkout supports research verification and reproduction; it does not reconstruct the paper. See [AI assistance disclosure](docs/ai_disclosure.md).
 
-To rebuild and check the paper in an author working copy that contains the local `manuscript/` directory:
+## Reproduce from official records
+
+Use a separate working copy. Preserve supplied `results/real_data/` as reference outputs and start with a fresh directory of that name and an empty `data/processed/real_study/`. Do not delete or rewrite the reference protocol lock. The original lock has a local absolute runner path; a fresh run makes a new directory-specific lock before evaluating controllers.
 
 ```sh
-python scripts/build_manuscript.py
-python scripts/verify_pdf.py
-python scripts/verify_pdf.py --review
-python scripts/verify_artifact.py
+python scripts/acquire_real_data.py --workers 3
+python scripts/real_data_study.py audit
+python scripts/real_data_study.py prepare
+python scripts/real_data_study.py validate --workers 3
+python scripts/real_data_study.py evaluate --workers 3
+python scripts/real_data_study.py summarize
+python scripts/verify_real_data.py
+python scripts/reproduce_real_pair.py
 ```
 
-## Reproduce the experiments
+Acquisition needs network access to the public official export; no account is used. Compare raw checksums against the reference acquisition record before claiming exact data reproduction. Fitting, selection, histories and locked source are checked throughout. Full runtime depends on hardware and solver behavior. Private per-session records remain excluded from distribution; aggregate checksums establish correspondence without publishing identities.
 
-The commands below overwrite derived results. Use a separate working copy to retain the supplied reference outputs. Controller selection uses validation data; the later diagnostics reuse the inspected test populations and remain exploratory. The final manuscript build and PDF check require the separately held author manuscript; skip those two commands in a GitHub-only checkout. Reporting commands may regenerate ignored table files under `manuscript/`, but do not reconstruct the manuscript text.
+The old synthetic workflow is preserved in [the historical README](docs/historical_synthetic/README.md). Its original `python -m evfair.cli report` regenerates historical tables and must not be used as the current manuscript reporting command.
 
-```sh
-python -m evfair.cli validate
-python -m evfair.cli evaluate --workers 3
-python -m evfair.cli supplement --workers 2
-python scripts/check_point_baseline.py
-python scripts/check_point_tiebreak.py
-python scripts/second_pass_diagnostics.py
-python -m evfair.cli report
-python scripts/finalize_secondary.py
-python scripts/finalize_review.py
-python scripts/report_second_pass.py
-python scripts/make_information_figure.py
-python scripts/reproduce_check.py
-python scripts/build_manuscript.py
-python scripts/verify_pdf.py
-python scripts/verify_artifact.py
-```
+## Publication boundary
 
-The primary study contains 220 runs; the supplementary study contains 55. Runtime depends on hardware and solver behavior. The source and analysis locks document the study sequence; they are local records, not an external preregistration. `verify_second_pass.py` also checks byte-for-byte preservation of the supplied primary outputs, including the original protocol timestamp and runtime diagnostics; use that historical check on the reference copy.
-
-## Data and availability
-
-The ACN discovery sample contains 26 records. The original adapter retained 12 sessions from eight users; a later correction to request-update ordering retains 14 sessions from ten users. Neither version contains a user with five eligible sessions. These records are used only to assess data coverage, and do not determine the simulation parameters.
-
-Acquisition sources, exclusions, and commands are documented in [data acquisition](docs/data_acquisition.md). Real-session working files are excluded from review archives. The [related-work notes](docs/recent_literature_review.md) record the sources and access depth used in preparing the paper.
-
-The manuscript is an unpublished research draft maintained separately from this repository. Submission decisions remain in the [submission checklist](docs/submission_checklist.md). No public license has been selected for the research code; the IEEEtran class in the local author package retains its own license notices.
+This repository publishes research code, protocols, aggregate results, plots and documentation. The manuscript PDF, LaTeX source, extracted paper text, private Grammarly reports, manuscript-writing template and author source archive are excluded. Raw real-session data and individual action/history records also remain local. Publishing this research artifact is not a conference submission or a claim of acceptance. Author approval and conference-specific screening/certification remain separate steps.

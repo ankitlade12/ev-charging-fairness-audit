@@ -29,3 +29,36 @@ dist/
 # Author manuscript and final delivery stay local; do not publish to GitHub.
 /manuscript/
 /final/
+
+# Keep manuscript prose generators and private editorial reports local.
+/scripts/report_real_data.py
+/scripts/package_real_icca.py
+/scripts/screen_manuscript_overlap.py
+/docs/final_recheck.md
+/docs/grammarly_review.md
+/docs/historical_synthetic/submission_checklist.md
+/docs/historical_synthetic/ai_disclosure.md
+
+# Publish only reviewed real-data aggregates; never individual records/reviews.
+/results/real_data/*
+!/results/real_data/acquisition.json
+!/results/real_data/block_sensitivity.json
+!/results/real_data/coverage.csv
+!/results/real_data/data_audit.json
+!/results/real_data/forecast_fit.json
+!/results/real_data/fresh_pair_reproduction.json
+!/results/real_data/independent_verification.json
+!/results/real_data/paired_intervals.csv
+!/results/real_data/protocol_lock.json
+!/results/real_data/public_artifact_verification.json
+!/results/real_data/report_numbers.json
+!/results/real_data/run_index.json
+!/results/real_data/selection_lock.json
+!/results/real_data/test_q3_forecast_balanced.csv
+!/results/real_data/test_q3_forecast_landmarks.csv
+!/results/real_data/test_q4_forecast_balanced.csv
+!/results/real_data/test_q4_forecast_landmarks.csv
+!/results/real_data/test_scores.csv
+!/results/real_data/tests.txt
+!/results/real_data/validation_grid.csv
+!/results/real_data/verification.json

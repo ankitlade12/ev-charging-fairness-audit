@@ -1,0 +1,32 @@
+{
+  "locked_at": "2026-09-23T00:50:25.545376+00:00",
+  "state": {
+    "files": {
+      "config/real_data_protocol.json": "fe7e949ba4c3b14d84a7828b254a6d9016c7d67705ff064a75e75871dbfe3372",
+      "/Users/ankithemantlade/Desktop/Conference_Paper_ev_charging/scripts/real_data_study.py": "c95217465e432c6df207fc9990fadfb93f25999746dca2966fe5ccc03f4f43cd",
+      "scripts/acquire_real_data.py": "3ff0fe60f3c3a265fafe3be9bcf1831a30498aa23af7376889928437daf65847",
+      "scripts/audit_revision_order.py": "c454aca77ee403e1228e4945dafa626528deaca370ced5b4463884af3ec439ab",
+      "scripts/second_pass_diagnostics.py": "d26bd4e0fdbfdc399d0418ab9d1c7a04a8e6d669bd0d8437a663d381b4474572",
+      "src/evfair/__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "src/evfair/cli.py": "ffb1ea7ebda203c1d7db9ea442ead7558896166e6f48aac7c26d27139b69a645",
+      "src/evfair/control.py": "e7edc8c1c488f7dae9bd0b1c99adff38ca6d9fb41d85c1365ee8988a442936e4",
+      "src/evfair/data.py": "ed01380e4f5bd2c17fff058c416da425d65da614d7a13ec1e86febf0c5ceffa6",
+      "src/evfair/experiment.py": "34a8211f6d3a12af69b1d0401372e0932fba919e4620545de76ca71fa1c82ab1",
+      "src/evfair/forecast.py": "8eb9da4904368d3dd5181e44206e956d55e0f9a5a266c536368fa8e77189bee9",
+      "src/evfair/metrics.py": "9ec106bf1c00064c3685adcccbd0eda4d2f2a78e936a5d448475574bcc8924a9",
+      "src/evfair/report.py": "457c4aa03f0b6f98275102aab3832dc16304f7ee0ce59b42d288d81168eccebd",
+      "src/evfair/simulate.py": "6ca8269ee9c2be346edfe169ec6ebdd05d0099f1963a17db0cda96176d075ef5",
+      "src/evfair/supplement.py": "91454159cf18690e46acc2f424ce07c5acd60d19e2a3e1e2409c00966b22bd81",
+      "src/evfair/synthetic.py": "5184098c526e028a5867cd329dd6a85ac1befccb791a7d07b3b068d054214ad6"
+    },
+    "data_sha256": "bdddc9cad2bf9738908ea6180f89e9b813e535a382adeaf0e9175caaeb513825",
+    "normalized_splits": {
+      "train": "18ea8aefcd737a8647660a113d44b3199562deabe1cad8eda44c07c023760c38",
+      "calibration": "df5f7627227bc376bc3ae6cc20c76340c9080a67fb160ca58704bdc70aa2d2a4",
+      "validation": "0bbbdab47b78bd90a9eddf398a8b59702ee5552cab5c1c539e646102b55d1d22",
+      "test_q3": "00072318d5ceecec9d26c4b1978abde0cfd73cf60349c7960f6a6d9d8ab222f1",
+      "test_q4": "7dfd2bab64b156aec3b77fc9b1e346dd744d9dfad314a401601052a1c19fd9b0"
+    }
+  },
+  "status": "Specified after synthetic results and coverage checks, before real-data controller evaluation; not external preregistration"
+}

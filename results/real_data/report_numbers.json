@@ -1,0 +1,25 @@
+{
+  "macros": {
+    "QThreeHistory": 58.30079931621395,
+    "QThreeBase": 52.35255681499448,
+    "PrimaryDiff": 5.94824250121947,
+    "PrimaryLow": 2.687727157912496,
+    "PrimaryHigh": 10.845414315580426,
+    "PrimaryEnergy": 98.83472480406192,
+    "PrimaryCost": 98.95444703785824
+  },
+  "primary_practical_target_met": false,
+  "table_policies": [
+    "equal",
+    "fcfs",
+    "edf",
+    "laxity",
+    "maxmin",
+    "debt_share",
+    "point",
+    "stochastic",
+    "point_history",
+    "pf_mpc",
+    "history"
+  ]
+}

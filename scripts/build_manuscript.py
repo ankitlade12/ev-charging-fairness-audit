@@ -1,14 +1,19 @@
+"""Build the active named ICCA A4 manuscript; historical drafts stay archived."""
 from pathlib import Path
-import re,subprocess
+import shutil, subprocess
 root=Path(__file__).resolve().parents[1]
-source=(root/'manuscript'/'main.tex').read_text()
-review=re.sub(r'pdfauthor=\{[^}]*\}', 'pdfauthor={}', source)
-review=re.sub(r'\\author\{.*?(?=\\begin\{document\})',lambda _: '\\author{\\IEEEauthorblockN{Author 1 \\and Author 2}}\n',review,flags=re.S)
-review=review.replace(r'\section*{Acknowledgment}',r'\section*{AI Assistance Disclosure}')
-(root/'manuscript'/'review.tex').write_text(review)
-for name in ['main','review']:
-    for i in range(2):
-        label='latex' if name=='main' else 'latex_review'
-        with (root/'results'/f'{label}_pass_{i+1}.log').open('w') as log:
-            subprocess.run(['pdflatex','-interaction=nonstopmode','-halt-on-error',f'{name}.tex'],cwd=root/'manuscript',stdout=log,stderr=subprocess.STDOUT,check=True)
-    print(f'Built manuscript/{name}.pdf')
+latex=shutil.which('pdflatex')
+if not latex:
+    candidate=Path.home()/'Library/TinyTeX/bin/universal-darwin/pdflatex'
+    if candidate.exists():latex=str(candidate)
+if not latex:raise SystemExit('Install a LaTeX distribution providing pdflatex.')
+source=root/'manuscript'/'icca.tex'
+(root/'manuscript'/'main.tex').write_text(source.read_text())
+out=root/'results'/'real_data';out.mkdir(parents=True,exist_ok=True)
+for i in range(2):
+    with (out/f'latex_pass_{i+1}.log').open('w') as log:
+        subprocess.run([latex,'-interaction=nonstopmode','-halt-on-error','icca.tex'],cwd=source.parent,stdout=log,stderr=subprocess.STDOUT,check=True)
+shutil.copy2(source.with_suffix('.pdf'),source.parent/'main.pdf')
+(root/'final').mkdir(exist_ok=True)
+shutil.copy2(source.with_suffix('.pdf'),root/'final'/'ICCA_2026_Paper.pdf')
+print('Built named ICCA manuscript and final/ICCA_2026_Paper.pdf')

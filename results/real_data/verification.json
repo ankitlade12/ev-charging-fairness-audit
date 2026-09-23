@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "controller_runs": 31,
+  "validation_runs": 21,
+  "all_runs_actions_verified": true,
+  "maximum_applied_violation": 9.989275895350148e-08,
+  "fallbacks": 61,
+  "source_data_protocol_unchanged": true,
+  "scope": "Retrospective replay of observed sessions under modeled charging dynamics; not measured counterfactual delivery, live trial or independent-site inference."
+}

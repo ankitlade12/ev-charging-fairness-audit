@@ -1,0 +1,71 @@
+{
+  "source_sha256": "bdddc9cad2bf9738908ea6180f89e9b813e535a382adeaf0e9175caaeb513825",
+  "preprocessing": {
+    "raw_sessions": 17414,
+    "superseded_same_bin_updates": 2529,
+    "invalid_revision_record_quarantined": 2
+  },
+  "normalization": {
+    "raw_sessions": 17412,
+    "eligible_before_overlap": 16530,
+    "late_first_request": 772,
+    "energy_revision_sessions": 545,
+    "rounding_lost_hours": 4108.3858333333565,
+    "excluded_missing_identity": 564,
+    "excluded_cross_local_day": 227,
+    "excluded_no_full_service_slot": 91,
+    "excluded_station_overlap": 0,
+    "eligible_sessions": 16530,
+    "eligible_users": 367
+  },
+  "outside_or_crossing_split_boundaries": 1,
+  "coverage": [
+    {
+      "period": "train",
+      "sessions": 5324,
+      "users": 243,
+      "repeat_users": 180,
+      "observed_days": 118,
+      "energy_revision_sessions": 166,
+      "late_request_sessions": 229
+    },
+    {
+      "period": "calibration",
+      "sessions": 1530,
+      "users": 207,
+      "repeat_users": 116,
+      "observed_days": 31,
+      "energy_revision_sessions": 58,
+      "late_request_sessions": 70
+    },
+    {
+      "period": "validation",
+      "sessions": 1323,
+      "users": 203,
+      "repeat_users": 105,
+      "observed_days": 30,
+      "energy_revision_sessions": 50,
+      "late_request_sessions": 69
+    },
+    {
+      "period": "test_q3",
+      "sessions": 4206,
+      "users": 260,
+      "repeat_users": 176,
+      "observed_days": 92,
+      "energy_revision_sessions": 126,
+      "late_request_sessions": 201
+    },
+    {
+      "period": "test_q4",
+      "sessions": 4146,
+      "users": 277,
+      "repeat_users": 194,
+      "observed_days": 89,
+      "energy_revision_sessions": 145,
+      "late_request_sessions": 203
+    }
+  ],
+  "training_peak_kw": 343.19999999999976,
+  "normalization_note": "6.6-kW ports and efficiency 0.92 are common modeled assumptions, not measured session power. Excluded sessions supply no background load."
+}

@@ -1,60 +1,35 @@
-# IEEE CCWC 2027 submission checklist
+# ICCA 2026 submission checklist
 
-Updated 21 September 2026 against the [submission instructions](https://ieee-ccwc.org/submissions/) and [call for papers](https://ieee-ccwc.org/call-for-papers/). The user confirmed this event as the target. No paper has been submitted and no organizer has been contacted.
+The target is the **International Conference on Computer and Applications, Cairo, 21–24 December 2026**, from the supplied call. The active paper is `final/ICCA_2026_Paper.pdf`. Historical CCWC materials are archived and do not govern this submission. This work has not submitted a paper, contacted organizers or paid fees.
 
-## Delivered versions
+## Prepared locally
 
-- The local `manuscript/main.pdf` is the named author copy. Author order, names, emails and the shared Independent Researcher, Dallas, USA affiliation were provided by the user.
-- The local `manuscript/review.pdf` is the anonymous review copy with Author 1 and Author 2, no affiliations or email links, and empty author metadata. Use this version for review after resolving the disclosure-placement question below.
-- Both copies have seven US-letter pages, embedded non-Type-3 fonts and no undefined references or overfull boxes. They fit the regular-paper base limit, but exceed the six-page WIP base limit. Regular papers permit up to three paid extra pages; WIP permits up to two. Category selection remains the authors' decision.
-- PDFs, manuscript sources and final delivery files stay local and are ignored by Git. The publication history was subsequently rewritten to exclude the manuscript. Because GitHub still served cached old commits, the original repository was retained as a private backup and a fresh repository received only the cleaned history. The old manuscript commit returns HTTP 404 in the replacement repository. Existing private backups and downloaded copies are not erased.
+- [x] Real-session JPL evaluation completed; recorded inputs and simulated outcomes clearly distinguished.
+- [x] All eleven policies, both test periods, specified sensitivities and unfavorable findings reported.
+- [x] Named IEEE A4 paper, six pages including references; authors and metadata retained.
+- [x] Embedded non-Type-3 fonts; resolved references; no overfull boxes, page numbering or placeholder footer.
+- [x] Dataset attribution, related work, limitations and substantial AI-assistance acknowledgment included.
+- [x] Code, protocol, data provenance, aggregate results, verification and source bundle prepared.
+- [x] Previous synthetic version retained separately; manuscript remains excluded from Git publication.
 
-## Dates and format
+## Event instructions
 
-The current event pages list full papers due **6 November 2026**, camera-ready papers due **4 December 2026**, and the conference on **4–6 January 2027**. The submission page links EDAS. It requires anonymous review papers and removes names, affiliations, IEEE grades, funding references and acknowledgments. The call contains duplicated historical dates; the 2027 block is used here. Deadline timezone and acceptance-notification date remain unspecified. PDF eXpress and copyright details remain placeholders. No identifier, copyright line or acceptance status has been invented.
+The [official website](https://icca-conf.info/) specifies single-blind review, A4 IEEE formatting, six base pages and $35 per extra page, with no clear maximum. Use the named paper. It publishes PDF eXpress ID **70833X** and links [EDAS 35014](https://edas.info/newPaper.php?c=35014). Authenticated fields, timezone and supplement rules remain unverified.
 
-## Scientific review completed
+Plan for **30 September 2026**, as the supplied call and [downloadable flyer](https://icca-conf.info/ieee-icca-call-for-papers) state; the homepage says 30 October. The flyer gives 30 October notification and 17 December camera-ready. The supplied call permits online or onsite presentation.
 
-- [x] Recomputed metrics from all 220 primary and 55 supplementary saved session trajectories.
-- [x] Recomputed the primary paired intervals and checked 16 numerical manuscript macros.
-- [x] Checked all primary deliveries against saved offline upper bounds and session shortfall definitions.
-- [x] Verified all 25 numerical-diagnostic runs and forecast score identities with the existing checker.
-- [x] Ran all 23 existing tests; checked primary source/protocol and historical output hashes unchanged.
-- [x] Clarified slot units, horizon indices, tail denominators and policy-specific reranking.
-- [x] Disclosed pointwise intervals, no multiplicity correction, and conditioning on selected settings.
-- [x] Retained failed practical targets, lack of superiority to simple history sharing, and synthetic-only scope.
-- [x] Rechecked closest recent literature and updated the Puech preprint to the inspected v4.
-- [x] Built and visually checked both PDFs; these are local checks, not IEEE PDF eXpress certification.
+The website lists $400 IEEE-member/$450 nonmember registration, conflicting discount/later-fee wording, an early window of three days and withdrawal after ten days. Registration and author presentation are required; confirm the invoice before paying. The site expressly disclaims an official CORE ranking. Indexing/publication claims do not guarantee acceptance or indexing of this paper. Conference sponsorship was not independently certified through IEEE's event registry during this review.
 
-The new numerical review reuses saved outcomes; it is not a fresh full experiment, independent human replication or field validation. The earlier clean-environment reproduction remains documented separately.
+## Remaining author and portal steps
 
-## Remaining research limits
+- [ ] Read and approve the actual final paper, methods, code and negative findings; confirm both authors' consent and contributions, affiliations, email addresses and corresponding author.
+- [ ] Confirm original-work status and that this manuscript is not concurrently under review elsewhere. The user's instruction to keep ICCA as the target did not establish current submission status.
+- [ ] Verify the authenticated EDAS event, deadline/timezone, topic/track, author metadata, file limits and any permitted supplementary upload. Optimization, simulation or smart-city/transportation topics fit better than an unrelated generative-AI industry session.
+- [ ] Review an authorized iThenticate/similarity report when available, or the organizer's screening findings. The Grammarly precheck is complete (the editorial report remains local); conference-specific screening remains open. Do not label the paper plagiarism-free or detector-approved.
+- [ ] Complete the applicable IEEE copyright agreement after acceptance; no agreement is completed by this local review.
+- [ ] Obtain official PDF eXpress validation at the applicable submission/camera-ready stage. Local mechanical checks are not certification.
+- [ ] Confirm any institutional data/ethics determination applicable to public pseudonymous records. This work does not assert an institutional exemption or approval.
+- [ ] Confirm code/data redistribution rights. The package excludes third-party raw records; public visibility is not an open-source license grant.
+- [ ] Upload the approved named PDF only when the authors choose to submit. Retain the exact final hash with any similarity/certification report.
 
-The empirical discovery sample has 14 eligible sessions from ten users, with no user meeting the five-session gate. All controller findings are synthetic. Only five designed populations support the uncertainty intervals. The candidate misses the five-percentage-point target and does not establish superiority over simple history-weighted sharing. Numerical tie-breaking undermines the original point-versus-distribution comparison. The revised numerical variants need validation-only retuning and untouched test populations before a new confirmatory superiority claim. The full model omits queues, battery taper, discrete pilots, network voltages, thermal dynamics and behavioral response. These are disclosed limitations, not completed experiments.
-
-## AI disclosure placement
-
-[IEEE's submission policy](https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/), checked 21 September 2026, requires AI-generated content to be disclosed in acknowledgments with the system, affected sections and extent of assistance. The named copy now includes this disclosure. The anonymous copy retains the same non-identifying text under **AI Assistance Disclosure**, with no acknowledgment heading or funding information, because CCWC instructs review authors to remove acknowledgments.
-
-**Exact placement in the anonymous version remains an instruction conflict for the human submitter to resolve against conference guidance.** A separate heading preserves disclosure and anonymity but is not a verified exception to IEEE's specified location. No organizer confirmation has been obtained. See `ai_disclosure.md`. No Turnitin score or acceptance prediction is claimed.
-
-## Turnitin AI-score check requested by the authors
-
-Checked 21 September 2026. [CCWC](https://ieee-ccwc.org/submissions/) describes an acceptable Turnitin AI score as typically below 20%; this is conference-specific wording, not a guarantee of acceptance or a universal IEEE rule. [Turnitin's current documentation](https://guides.turnitin.com/hc/en-us/articles/22774058814093-Using-the-AI-Writing-Report) explains that nonzero results below 20% appear as `*%`, without an exact percentage or highlights, because false positives are more likely in that range. Its AI assessment can be wrong in either direction. An AI-writing indicator and a text-similarity score are separate measures; neither alone establishes research integrity.
-
-The linked [IEEE RAS guidance](https://www.ieee-ras.org/publications/guidelines-for-generative-ai-usage/) requires disclosure and human responsibility and permits appropriate writing assistance. It does not state a general 20% limit. Actual substantial AI assistance must still be disclosed regardless of the detector output.
-
-**This manuscript's Turnitin AI score is unverified.** No Turnitin report, authorized account or connected detector was available, and no paper was uploaded to any checking service. Do not describe the paper as under 20%, AI-free, plagiarism-free or detector-approved. An authorized Turnitin AI Writing Report for the final anonymous PDF is still needed to assess this criterion. Keep the report date and the exact PDF hash, and have the authors review any flagged passages and their supporting evidence. No wording change can guarantee a particular score.
-
-## Human decisions before upload
-
-- [ ] Review and approve the entire text, equations, code, citations and interpretation; independent domain review remains advisable.
-- [ ] Confirm both authors' consent, contributions and corresponding-author designation. The supplied author order and affiliation are implemented; consent is not inferred.
-- [ ] Select regular paper or WIP and confirm applicable page limits, tracks and submission fields in EDAS.
-- [ ] Resolve AI-disclosure placement for anonymous review.
-- [ ] Obtain and review the actual Turnitin AI Writing Report for the final anonymous PDF; no score has been verified.
-- [ ] Reconfirm deadlines and final event instructions; obtain official copyright/PDF eXpress information only when provided.
-- [ ] Upload only the intended anonymous PDF and approved anonymous supplementary files, if the event allows them. The named source bundle is an author working package, not a blind supplement.
-- [ ] Choose a code license before any intended public redistribution and confirm applicable rights.
-
-Submission, account creation, organizer contact and payment have not been authorized or performed. The user's request explicitly authorizes removing the manuscript from GitHub; that removal does not require another confirmation.
+Substantial AI assistance remains disclosed under [IEEE policy](https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/). No ICCA-specific AI percentage cutoff was verified. Clearer prose is not evidence of human-only authorship. Unresolved author confirmations and official services cannot be completed by local formatting or statistical checks.

@@ -1,0 +1,74 @@
+{
+  "locked_at": "2026-09-23T00:53:16.151038+00:00",
+  "comparator": "maxmin",
+  "selected": {
+    "debt_share": {
+      "gamma": 20.0,
+      "lam": 4.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "edf": {
+      "gamma": 20.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "equal": {
+      "gamma": 20.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "fcfs": {
+      "gamma": 20.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "history": {
+      "gamma": 40.0,
+      "lam": 4.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "laxity": {
+      "gamma": 20.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "maxmin": {
+      "gamma": 20.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "pf_mpc": {
+      "gamma": 40.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "point": {
+      "gamma": 40.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "point_history": {
+      "gamma": 40.0,
+      "lam": 4.0,
+      "rho": 0.2,
+      "horizon": 96
+    },
+    "stochastic": {
+      "gamma": 40.0,
+      "lam": 0.0,
+      "rho": 0.2,
+      "horizon": 96
+    }
+  },
+  "validation_sha256": "71667cf60e88770dcb51a04cb70e5eef7d877e6ec55151184cf4368760a23204",
+  "protocol_lock_sha256": "5718f25d6c4e16b6deb7b6b8d47ccc67070d875cec8761a93fd7b4af137d81d4"
+}

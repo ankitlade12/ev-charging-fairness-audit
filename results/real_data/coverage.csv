@@ -1,0 +1,6 @@
+period,sessions,users,repeat_users,observed_days,energy_revision_sessions,late_request_sessions
+train,5324,243,180,118,166,229
+calibration,1530,207,116,31,58,70
+validation,1323,203,105,30,50,69
+test_q3,4206,260,176,92,126,201
+test_q4,4146,277,194,89,145,203

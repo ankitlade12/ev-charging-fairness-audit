@@ -1,0 +1,399 @@
+[
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.35,
+    "policy": "equal",
+    "gamma": 20.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.35,
+    "policy": "fcfs",
+    "gamma": 20.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.35,
+    "policy": "edf",
+    "gamma": 20.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.35,
+    "policy": "laxity",
+    "gamma": 20.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.35,
+    "policy": "maxmin",
+    "gamma": 20.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.35,
+    "policy": "debt_share",
+    "gamma": 20.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.35,
+    "policy": "point",
+    "gamma": 40.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 4825,
+      "second_accepted": 4825
+    }
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.35,
+    "policy": "stochastic",
+    "gamma": 40.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 4833,
+      "second_accepted": 4833
+    }
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.35,
+    "policy": "point_history",
+    "gamma": 40.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 4827,
+      "second_accepted": 4827
+    }
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.35,
+    "policy": "pf_mpc",
+    "gamma": 40.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 4842,
+      "second_accepted": 4821,
+      "second_rejected_first_used": 21
+    }
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.35,
+    "policy": "history",
+    "gamma": 40.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 4841,
+      "second_accepted": 4840,
+      "second_rejected_first_used": 1
+    }
+  },
+  {
+    "period": "test_q4",
+    "capacity_fraction": 0.35,
+    "policy": "equal",
+    "gamma": 20.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q4",
+    "capacity_fraction": 0.35,
+    "policy": "fcfs",
+    "gamma": 20.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q4",
+    "capacity_fraction": 0.35,
+    "policy": "edf",
+    "gamma": 20.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q4",
+    "capacity_fraction": 0.35,
+    "policy": "laxity",
+    "gamma": 20.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q4",
+    "capacity_fraction": 0.35,
+    "policy": "maxmin",
+    "gamma": 20.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q4",
+    "capacity_fraction": 0.35,
+    "policy": "debt_share",
+    "gamma": 20.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q4",
+    "capacity_fraction": 0.35,
+    "policy": "point",
+    "gamma": 40.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 5319,
+      "second_accepted": 5319
+    }
+  },
+  {
+    "period": "test_q4",
+    "capacity_fraction": 0.35,
+    "policy": "stochastic",
+    "gamma": 40.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 5303,
+      "second_accepted": 5303
+    }
+  },
+  {
+    "period": "test_q4",
+    "capacity_fraction": 0.35,
+    "policy": "point_history",
+    "gamma": 40.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 5319,
+      "second_accepted": 5318,
+      "second_rejected_first_used": 1
+    }
+  },
+  {
+    "period": "test_q4",
+    "capacity_fraction": 0.35,
+    "policy": "pf_mpc",
+    "gamma": 40.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 5322,
+      "second_accepted": 5289,
+      "first_failure": 1,
+      "second_rejected_first_used": 32
+    }
+  },
+  {
+    "period": "test_q4",
+    "capacity_fraction": 0.35,
+    "policy": "history",
+    "gamma": 40.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 5312,
+      "second_accepted": 5312
+    }
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.2,
+    "policy": "history",
+    "gamma": 40.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 4871,
+      "second_accepted": 4871
+    }
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.2,
+    "policy": "debt_share",
+    "gamma": 20.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.2,
+    "policy": "pf_mpc",
+    "gamma": 40.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 4883,
+      "second_accepted": 4843,
+      "second_rejected_first_used": 40
+    }
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.5,
+    "policy": "history",
+    "gamma": 40.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 4822,
+      "second_accepted": 4822
+    }
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.5,
+    "policy": "debt_share",
+    "gamma": 20.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 0.5,
+    "policy": "pf_mpc",
+    "gamma": 40.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 4822,
+      "second_accepted": 4813,
+      "second_rejected_first_used": 9
+    }
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 1.0,
+    "policy": "history",
+    "gamma": 40.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 4822,
+      "second_accepted": 4822
+    }
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 1.0,
+    "policy": "debt_share",
+    "gamma": 20.0,
+    "lam": 4.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {}
+  },
+  {
+    "period": "test_q3",
+    "capacity_fraction": 1.0,
+    "policy": "pf_mpc",
+    "gamma": 40.0,
+    "lam": 0.0,
+    "rho": 0.2,
+    "horizon": 96,
+    "actions_verified": true,
+    "solver_stats": {
+      "first_calls": 4822,
+      "second_accepted": 4813,
+      "second_rejected_first_used": 9
+    }
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "Fresh deterministic replay in the same environment and machine; frozen fitted model and source, no refitting or independent replication",
+  "runs": [
+    {
+      "policy": "maxmin",
+      "maximum_absolute_errors": {
+        "delivered": 7.105427357601002e-15,
+        "cost": 1.7763568394002505e-15,
+        "shortfall": 1.1102230246251565e-16,
+        "excess": 1.7763568394002505e-15
+      },
+      "seconds": 2.4798727079760283,
+      "fallbacks": 0
+    },
+    {
+      "policy": "history",
+      "maximum_absolute_errors": {
+        "delivered": 7.105427357601002e-15,
+        "cost": 1.7763568394002505e-15,
+        "shortfall": 1.1102230246251565e-16,
+        "excess": 3.552713678800501e-15
+      },
+      "seconds": 91.91486770799384,
+      "fallbacks": 0
+    }
+  ]
+}

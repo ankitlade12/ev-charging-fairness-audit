@@ -1,11 +1,3 @@
-# Real-session manuscript update
-
-The current paper evaluates JPL ACN-Data in chronological retrospective replay. The official data export now passes the repeated-user gate; the old discovery-sample limitation is historical. The dataset and simulator papers remain separate citations. Puech et al. is cited in its published ISGT Europe 2024 form (DOI 10.1109/ISGTEUROPE62998.2024.10863074, pp. 1–6), with arXiv:2402.13224v4 as an accessible author version. Hall and Reddy remain explicitly labeled preprints. This extension did not conduct a new systematic literature search.
-
-The source-level access notes below remain the record of the earlier literature review. Claims about our results there concern the historical synthetic study unless updated in the current manuscript.
-
----
-
 # Second-pass literature and novelty review
 
 Reviewed 13 September 2026. This is a targeted primary-source review, not a systematic review or a guarantee that every relevant publication has been found. Searches covered EV fairness, repeated service, history/reputation, uncertain departures, proportional fairness, interpretable policies, and data tools; backward citation tracing followed the closest papers. Publisher records, author manuscripts and university repositories were preferred. Search-engine crawl dates were not treated as publication dates. Access depth and unresolved leads are explicit below.

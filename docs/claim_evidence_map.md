@@ -1,25 +1,17 @@
-# Claim-to-artifact map
+# Current claim-to-evidence map
 
-| Claim | Evidence |
-| --- | --- |
-| Primary tail contrast | results/tables/paired_intervals.csv; results/primary_conclusion.json |
-| Every baseline and capacity | results/test_scores.csv |
-| Data feasibility gate | results/data_audit.json; data/raw/ornl_metadata.json |
-| Forecast quality | results/tables/forecast_scores.csv; results/tables/reliability.csv |
-| Ablations and stresses | results/tables/supplement_effects.csv |
-| Offline service upper bounds | results/tables/offline_bounds.csv |
-| Leakage/physics checks | tests/test_core.py; results/clean_environment_tests.txt |
-| Fresh-environment reproduction | results/reproduction/verification.json |
-| Protocol freeze | config/protocol.json; results/protocol_lock.json; config/secondary_analysis_lock.json |
+| Claim | Evidence | Boundary |
+|---|---|---|
+| Recorded JPL inputs support a repeated-user replay | `results/real_data/acquisition.json`, `data_audit.json`, `coverage.csv` | Complete relative to queried official export; not every physical site event |
+| 16,529 sessions assigned to chronological periods | Normalization audit, split files and hashes | Missing-ID, cross-day and partial-slot exclusions; excluded load absent |
+| Candidate does not beat validation-selected max–min | `selection_lock.json`, `test_scores.csv`, `paired_intervals.csv` | One site; two periods share users; conditional outcome intervals |
+| Q3 tail is 58.30% versus 52.35%; +5.95 pp [2.69,10.85] | Session-derived scores and paired five-day resampling | Policy-specific tails rerank users, not a fixed-person treatment effect |
+| Primary energy/cost point guardrails pass, fairness target fails | `report_numbers.json`, paired endpoint ratios | Modeled electricity bill, efficiency and requests; final-request excess retained |
+| History improves uncertainty-only MPC in Q3 | Matched history-versus-stochastic row in paired intervals | Does not establish superiority over other objective families |
+| Departure forecast scores do not establish allocation benefit | Both `*_forecast_balanced.csv`, landmark counts; history-versus-point-history comparison | No test model selection; no causal forecast-quality claim |
+| All applied actions satisfy model constraints and current requests | `independent_verification.json`: 52 runs, 3,292,992 action rows | Numerical tolerance 1e-7; not electrical-network or battery validation |
+| Replayed primary pair matches saved outcomes | `fresh_pair_reproduction.json` | Same machine, environment and fitted model; not independent replication |
+| ICCA formatting passes local checks | `pdf_verification.json`, rendered pages and package verification | IEEE PDF eXpress and EDAS validation outstanding |
+| Text is specifically written and sources attributed | Manuscript review and limited local overlap screen | No iThenticate/Turnitin clearance, AI score or originality guarantee |
 
-## Second-pass claims (exploratory unless noted)
-
-| Claim | Evidence |
-| --- | --- |
-| Matched tie-breaking, five MPC variants, 25 runs | results/second_pass/lexicographic_scores.csv; results/second_pass/lexicographic_paired_intervals.csv |
-| Later-landmark forecast scores and event counts | results/second_pass/forecast_by_landmark.csv; results/second_pass/forecast_session_balanced.csv; results/second_pass/forecast_paired_intervals.csv |
-| Revised eligibility: 14 sessions, ten users, no user with five sessions | results/second_pass/revision_order_audit.json; scripts/audit_revision_order.py |
-| Primary source/protocol and outcomes preserved | results/second_pass/primary_preservation.json; results/second_pass/verification.json |
-| New implementation checks | tests/test_second_pass.py; results/second_pass/tests.txt |
-| Literature overlap and current version checks | docs/recent_literature_review.md |
-| Seven-page author and anonymous review manuscripts; local format checks only | results/pdf_verification.json; results/pdf_review_verification.json; results/pdf_review/review.json |
+Source and protocol locks precede real controller outcomes; selection precedes tests. The extension was designed after historical synthetic work. The archived synthetic evidence supports a different workload and must not be pooled with this real-session analysis.

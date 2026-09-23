@@ -1,32 +1,28 @@
-"""PDF mechanics check; visual review is recorded separately by the reviewer."""
+"""Local ICCA PDF mechanics checks; does not replace IEEE PDF eXpress."""
 from pathlib import Path
-import argparse,json,re
+import hashlib,json,re
 import fitz
-parser=argparse.ArgumentParser()
-parser.add_argument('--review',action='store_true',help='Check the anonymous CCWC review copy')
-args=parser.parse_args()
-name='review' if args.review else 'main'
-p=fitz.open(f'manuscript/{name}.pdf');fonts={}
-source=Path(f'manuscript/{name}.tex').read_text()
-expected_author=re.search(r'pdfauthor=\{([^}]*)\}',source).group(1)
-text='\n'.join(page.get_text() for page in p)
-for page in p:
+source=Path('manuscript/icca.tex').read_text();path=Path('manuscript/icca.pdf');doc=fitz.open(path)
+text='\n'.join(page.get_text(sort=True) for page in doc)
+log=Path('results/real_data/latex_pass_2.log').read_text();fonts={}
+for page in doc:
     for f in page.get_fonts(full=True):
         if f[0] not in fonts:
-            name,ext,kind,content=p.extract_font(f[0]);fonts[f[0]]=dict(name=name,type=kind,embedded=bool(content))
-log=Path('results/latex_review_pass_2.log' if args.review else 'results/latex_pass_2.log').read_text()
-checks=dict(pages=len(p),letter_page_size=all(list(page.rect)==[0.,0.,612.,792.] for page in p),all_fonts_embedded=all(f['embedded'] for f in fonts.values()),
-    no_type3_fonts=all(f['type']!='Type3' for f in fonts.values()),pdf_author_empty=not p.metadata.get('author'),pdf_author_matches_source=p.metadata.get('author','')==expected_author,author_names_present=all(name.strip() in text for name in expected_author.split(';')),undefined_references='undefined' in log.lower(),overfull_boxes='Overfull' in log)
-checks['within_regular_base_limit']=checks['pages']<=7
-checks['within_wip_base_limit']=checks['pages']<=6
-checks['category_selected_by_author']=False
-if args.review:
-    author_source=Path('manuscript/main.tex').read_text()
-    author_names=re.search(r'pdfauthor=\{([^}]*)\}',author_source).group(1).split(';')
-    checks['anonymous_review']=checks['pdf_author_empty'] and all(name.strip() not in text for name in author_names) and '@' not in text and 'Author 1' in text and 'Author 2' in text
-    assert checks['anonymous_review']
-assert checks['within_regular_base_limit']
-assert all(checks[k] for k in ['letter_page_size','all_fonts_embedded','no_type3_fonts','pdf_author_matches_source','author_names_present'])
-assert not checks['undefined_references'] and not checks['overfull_boxes']
-Path('results/pdf_review_verification.json' if args.review else 'results/pdf_verification.json').write_text(json.dumps(dict(**checks,fonts=list(fonts.values())),indent=2))
-print(checks)
+            name,ext,kind,content=doc.extract_font(f[0]);fonts[f[0]]=dict(name=name,type=kind,embedded=bool(content))
+author=re.search(r'pdfauthor=\{([^}]+)\}',source).group(1)
+cited={k for group in re.findall(r'\\cite\{([^}]+)\}',source) for k in group.split(',')}
+refs=re.findall(r'\\bibitem\{([^}]+)\}',source)
+checks=dict(pages=len(doc),a4=all(abs(p.rect.width-595.276)<.02 and abs(p.rect.height-841.89)<.02 for p in doc),
+within_six_pages=len(doc)<=6,all_fonts_embedded=all(f['embedded'] for f in fonts.values()),no_type3_fonts=all(f['type']!='Type3' for f in fonts.values()),
+author_metadata=doc.metadata.get('author')==author,names_present=all(n.strip() in text for n in author.split(';')),
+no_undefined_references=not re.search(r'(undefined|Rerun to get cross-references)',log,re.I),no_overfull_boxes='Overfull' not in log,
+all_references_cited=cited==set(refs) and len(refs)==len(set(refs)),no_placeholders=not any(x in text for x in ['CCWC','TODO','XXXXXXXX','Author 1','Author 2']),
+no_attachments=doc.embfile_count()==0,no_comments=all(not list(p.annots() or []) for p in doc),
+no_page_number_footer=all(not re.search(r'^\s*\d+\s*$',p.get_text(clip=fitz.Rect(0,810,p.rect.width,p.rect.height)).strip()) for p in doc))
+assert all(v for k,v in checks.items() if k!='pages'),checks
+out=Path('results/real_data');out.mkdir(exist_ok=True)
+(out/'pdf_verification.json').write_text(json.dumps(dict(checks=checks,sha256=hashlib.sha256(path.read_bytes()).hexdigest(),fonts=list(fonts.values()),reference_count=len(refs),official_pdf_express=False),indent=2))
+Path('final/real_data_audit').mkdir(exist_ok=True)
+Path('final/real_data_audit/manuscript_text.txt').write_text(text)
+for i,p in enumerate(doc):p.get_pixmap(matrix=fitz.Matrix(1.3,1.3)).save(f'final/real_data_audit/page_{i+1}.png')
+print(json.dumps(checks,indent=2))
