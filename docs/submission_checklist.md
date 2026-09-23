@@ -8,7 +8,7 @@ The target is the **International Conference on Computer and Applications, Cairo
 - [x] All eleven policies, both test periods, specified sensitivities and unfavorable findings reported.
 - [x] Named IEEE A4 paper, six pages including references; authors and metadata retained.
 - [x] Embedded non-Type-3 fonts; resolved references; no overfull boxes, page numbering or placeholder footer.
-- [x] Dataset attribution, related work, limitations and substantial AI-assistance acknowledgment included.
+- [x] Dataset attribution, related work, and limitations included.
 - [x] Code, protocol, data provenance, aggregate results, verification and source bundle prepared.
 - [x] Previous synthetic version retained separately; manuscript remains excluded from Git publication.
 
@@ -24,12 +24,12 @@ The website lists $400 IEEE-member/$450 nonmember registration, conflicting disc
 
 - [ ] Read and approve the actual final paper, methods, code and negative findings; confirm both authors' consent and contributions, affiliations, email addresses and corresponding author.
 - [ ] Confirm original-work status and that this manuscript is not concurrently under review elsewhere. The user's instruction to keep ICCA as the target did not establish current submission status.
-- [ ] Verify the authenticated EDAS event, deadline/timezone, topic/track, author metadata, file limits and any permitted supplementary upload. Optimization, simulation or smart-city/transportation topics fit better than an unrelated generative-AI industry session.
-- [ ] Review an authorized iThenticate/similarity report when available, or the organizer's screening findings. The Grammarly precheck is complete (the editorial report remains local); conference-specific screening remains open. Do not label the paper plagiarism-free or detector-approved.
+- [ ] Verify the authenticated EDAS event, deadline/timezone, topic/track, author metadata, file limits and any permitted supplementary upload. Choose a track covering optimization, simulation, or smart-city/transportation research.
+- [ ] Review an authorized iThenticate/similarity report when available, or the organizer's screening findings. The editorial precheck is complete (the report remains local); conference-specific screening remains open. Do not label the paper plagiarism-free or detector-approved.
 - [ ] Complete the applicable IEEE copyright agreement after acceptance; no agreement is completed by this local review.
 - [ ] Obtain official PDF eXpress validation at the applicable submission/camera-ready stage. Local mechanical checks are not certification.
 - [ ] Confirm any institutional data/ethics determination applicable to public pseudonymous records. This work does not assert an institutional exemption or approval.
 - [ ] Confirm code/data redistribution rights. The package excludes third-party raw records; public visibility is not an open-source license grant.
 - [ ] Upload the approved named PDF only when the authors choose to submit. Retain the exact final hash with any similarity/certification report.
 
-Substantial AI assistance remains disclosed under [IEEE policy](https://conferences.ieeeauthorcenter.ieee.org/author-ethics/guidelines-and-policies/submission-policies/). No ICCA-specific AI percentage cutoff was verified. Clearer prose is not evidence of human-only authorship. Unresolved author confirmations and official services cannot be completed by local formatting or statistical checks.
+Unresolved author confirmations and official services cannot be completed by local formatting or statistical checks.

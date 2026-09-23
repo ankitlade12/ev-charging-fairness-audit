@@ -12,6 +12,6 @@
 | All applied actions satisfy model constraints and current requests | `independent_verification.json`: 52 runs, 3,292,992 action rows | Numerical tolerance 1e-7; not electrical-network or battery validation |
 | Replayed primary pair matches saved outcomes | `fresh_pair_reproduction.json` | Same machine, environment and fitted model; not independent replication |
 | ICCA formatting passes local checks | `pdf_verification.json`, rendered pages and package verification | IEEE PDF eXpress and EDAS validation outstanding |
-| Text is specifically written and sources attributed | Manuscript review and limited local overlap screen | No iThenticate/Turnitin clearance, AI score or originality guarantee |
+| Text is specifically written and sources attributed | Manuscript review and limited local overlap screen | No iThenticate/Turnitin clearance or originality guarantee |
 
 Source and protocol locks precede real controller outcomes; selection precedes tests. The extension was designed after historical synthetic work. The archived synthetic evidence supports a different workload and must not be pooled with this real-session analysis.

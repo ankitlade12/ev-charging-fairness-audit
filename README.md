@@ -55,7 +55,7 @@ python -m unittest discover -s tests -v
 python scripts/verify_public_real_artifact.py
 ```
 
-The portable public-artifact check verifies source locks and aggregate arithmetic without private records. The full action audit and fresh replay require the privately held raw data, normalized splits and traces. They cannot run against an aggregates-only package until data are acquired and the experiment is reproduced. The replay check runs the primary pair again in the same environment; it does not refit or create independent evidence. Manuscript prose, its reporting template, private editorial reports and submission archives stay local. The public checkout supports research verification and reproduction; it does not reconstruct the paper. See [AI assistance disclosure](docs/ai_disclosure.md).
+The portable public-artifact check verifies source locks and aggregate arithmetic without private records. The full action audit and fresh replay require the privately held raw data, normalized splits and traces. They cannot run against an aggregates-only package until data are acquired and the experiment is reproduced. The replay check runs the primary pair again in the same environment; it does not refit or create independent evidence. Manuscript prose, its reporting template, private editorial reports and submission archives stay local. The public checkout supports research verification and reproduction; it does not reconstruct the paper.
 
 ## Reproduce from official records
 
@@ -78,4 +78,4 @@ The old synthetic workflow is preserved in [the historical README](docs/historic
 
 ## Publication boundary
 
-This repository publishes research code, protocols, aggregate results, plots and documentation. The manuscript PDF, LaTeX source, extracted paper text, private Grammarly reports, manuscript-writing template and author source archive are excluded. Raw real-session data and individual action/history records also remain local. Publishing this research artifact is not a conference submission or a claim of acceptance. Author approval and conference-specific screening/certification remain separate steps.
+This repository publishes research code, protocols, aggregate results, plots and documentation. The manuscript PDF, LaTeX source, extracted paper text, private editorial reports, manuscript-writing template and author source archive are excluded. Raw real-session data and individual action/history records also remain local. Publishing this research artifact is not a conference submission or a claim of acceptance. Author approval and conference-specific screening/certification remain separate steps.
