@@ -16,4 +16,5 @@ for i in range(2):
 shutil.copy2(source.with_suffix('.pdf'),source.parent/'main.pdf')
 (root/'final').mkdir(exist_ok=True)
 shutil.copy2(source.with_suffix('.pdf'),root/'final'/'ICCA_2026_Paper.pdf')
-print('Built named ICCA manuscript and final/ICCA_2026_Paper.pdf')
+shutil.copy2(source.with_suffix('.pdf'),root/'final'/'ICCA_2026_Paper_EDAS.pdf')
+print('Built manuscript and matching final/ICCA_2026_Paper.pdf and ICCA_2026_Paper_EDAS.pdf')

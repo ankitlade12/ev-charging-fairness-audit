@@ -1,6 +1,6 @@
-# Service History and Forecast Value in EV Charging
+# History- and Forecast-Aware EV Charging Underperforms Max-Min Sharing on Worst-User Service
 
-Research artifact for **Service History and Forecast Value in EV Charging: A Real-Session Replay Audit**.
+Research artifact for **History- and Forecast-Aware EV Charging Underperforms Max-Min Sharing on Worst-User Service: A Real-Session Replay Audit**.
 
 [Results](docs/results_report.md) · [Protocol](docs/method_and_protocol.md) · [Data provenance](docs/data_acquisition.md) · [ICCA checklist](docs/submission_checklist.md)
 

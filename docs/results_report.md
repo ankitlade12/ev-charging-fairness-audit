@@ -10,6 +10,10 @@ Primary energy ratio: **98.83% [98.60, 99.22]**. Primary unit-cost ratio: **98.9
 
 Intervals are paired five-observed-day moving-block percentile outcome-resampling intervals (2,000 replicates), conditional on fitted settings and realized histories. They are not independent-site, refitting, selection or deployment confidence intervals. Tail eligibility and ranks are recomputed within each resample.
 
+## Validation guardrails and tail-delivery frontier
+
+All 21 validation configurations are retained in `validation_grid.csv`. Every configuration passes the 103% unit-cost guardrail; 7 fall below the 98% delivery guardrail. Max-min sharing is both admissible and the lowest-tail validation point. The locked history-plus-uncertainty candidate is admissible and dominates the other three candidate settings in both tail shortfall and delivery. The two-point tail-delivery Pareto frontier comprises max-min sharing and least laxity, so the guardrails did not hide a better-tail candidate.
+
 ## All primary-capacity policies
 
 | Policy | Q3 tail % | Q3 MWh | Q3 $/kWh | Q4 tail % | Q4 MWh | Q4 $/kWh |
