@@ -6,7 +6,7 @@ The paper is **accepted** to the International Conference on Computer and Applic
 
 - [x] Real-session JPL evaluation completed; recorded inputs and simulated outcomes clearly distinguished.
 - [x] All eleven policies, both test periods, specified sensitivities and unfavorable findings reported.
-- [x] Named IEEE A4 paper, seven pages including references; authors and metadata retained.
+- [x] Named IEEE A4 paper, eight pages including references; authors and metadata retained.
 - [x] Embedded non-Type-3 fonts; resolved references; no overfull boxes, page numbering or placeholder footer.
 - [x] Dataset attribution, related work, and limitations included.
 - [x] Both reviews addressed in the camera-ready source; see `docs/reviewer_response.md`.
