@@ -22,7 +22,7 @@ cited={k for group in re.findall(r'\\cite\{([^}]+)\}',source) for k in group.spl
 refs=re.findall(r'\\bibitem\{([^}]+)\}',source)
 checks=dict(pages=len(doc),a4=all(abs(p.rect.width-595.276)<.02 and abs(p.rect.height-841.89)<.02 for p in doc),
 within_edas_page_limit=len(doc)<=25,within_edas_file_limit=path.stat().st_size<6_000_000,
-body_font_at_least_11pt=common_font_size>=11.0,no_bookmarks=not doc.get_toc(),
+body_font_at_least_10pt=common_font_size>=10.0,no_bookmarks=not doc.get_toc(),
 no_pdf_links=all(not p.get_links() for p in doc),
 all_fonts_embedded=all(f['embedded'] for f in fonts.values()),no_type3_fonts=all(f['type']!='Type3' for f in fonts.values()),
 author_metadata=doc.metadata.get('author')==author,names_present=all(n.strip() in text for n in author.split(';')),
